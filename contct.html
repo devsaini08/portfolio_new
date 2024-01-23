@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .header {
+            width: 100%;
+            /* position: sticky;
+            top: 0; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            height: 150px;
+        }
+
+        .navbar {
+            /* border: 1px solid white; */
+            position: sticky;
+            top: 0;
+            box-shadow: inset 0px -5px 9px 0px white;
+            background-color: rgb(29, 27, 27);
+        }
+
+        .nav-list {
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            gap: 40px;
+
+        }
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .nav-item:hover {
+            color: white;
+            box-shadow: 0px 0px 75px -2px blue;
+        }
+
+        .logo-div {
+            display: none;
+        }
+
+        .logo-img {
+            border: 5px solid white;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+
+        .name-h1 {
+            display: none;
+        }
+
+        .div-phone {
+            display: none;
+        }
+
+        .fk {
+            display: none;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        .form-sec {
+            height: 80vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red; */
+        }
+
+        form {
+            height: 500px;
+            width: 70%;
+            /* border: 1px solid white; */
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(29, 27, 27);
+        }
+
+        h1 {
+            margin-top: 20px;
+            display: inline;
+            font-size: 30px;
+            color: yellow;
+            /* margin: auto; */
+        }
+
+        .name-div {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        input {
+            /* height: 40px; */
+            font-size: 20px;
+            border-radius: 5PX;
+        }
+
+        .msg {
+            height: 100px;
+            width: 450px;
+            font-size: 10px;
+        }
+
+        #btn-submit {
+            margin-top: 30px;
+            color: white;
+            background-color: black;
+            padding-top: 5px;
+            padding-right: 80px;
+            padding-bottom: 5px;
+            padding-left: 80px;
+            /* box-shadow: 0px 0px 53px -9px blue; */
+
+        }
+        #btn-submit:hover{
+            background: linear-gradient(to right, red, blue);
+        }
+
+
+        @media(max-width:60em) {
+            .navbar {
+                /* transition: all ease-in-out 0.5s; */
+            }
+
+            .header {
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                /* gap: 400px; */
+                position: relative;
+                /* position: sticky; */
+            }
+
+            .nav-list {
+                display: none;
+            }
+
+            .logo-div {
+                display: block;
+                color: white;
+                /* display: flex;
+                flex-direction: row; */
+            }
+
+            .div-phone {
+                display: none;
+                width: 100%;
+                padding-right: 25px;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                display: none;
+                justify-content: space-around;
+            }
+
+
+            .div-phone-nav-list {
+                color: white;
+                font-size: 20px;
+                list-style: none;
+            }
+
+            .logo-img {
+                display: none;
+
+            }
+
+            .name-h1 {
+                display: block;
+                color: white;
+            }
+
+            .fk {
+                display: block;
+            }
+
+            .btn2 {
+                display: none;
+            }
+
+            #logo-btn1 {
+                display: none;
+                color: white;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+
+    <header class="navbar">
+
+        <div class="header">
+            <ul class="nav-list">
+                <li><a href="" class="nav-item">Home</a></li>
+                <li><a href="" class="nav-item">Service</a></li>
+                <li><a href="" class="nav-item">About us</a></li>
+            </ul>
+            <a href="index.html"><img src="img/eac9a2ecbd6f37928da2073121bb32ec.jpg" class="logo-img"
+                    alt="logo-img"></a>
+            <h1 class="name-h1">DEV</h1>
+            <ul class="nav-list">
+                <li><a href="" class="nav-item">Resume</a></li>
+                <li><a href="" class="nav-item">Projects</a></li>
+                <li><a href="" class="nav-item">Contact us</a></li>
+            </ul>
+            <div class="logo-div">
+                <button onclick="fun1()" id="logo-btn" class="btn"><span class="material-symbols-outlined">
+                        menu
+                    </span></button>
+                <button onclick="fun2()" id="logo-btn1" class="btn"><span class="material-symbols-outlined">
+                        close
+                    </span></button>
+            </div>
+        </div>
+
+        <div class="div-phone">
+            <ul class="div-phone-nav-list">
+                <li><a href="" class="nav-item">resume</a></li>
+                <li><a href="" class="nav-item">contact_us</a></li>
+                <li><a href="" class="nav-item">hello</a></li>
+                <li><a href="" class="nav-item">resume</a></li>
+                <li><a href="" class="nav-item">contact_us</a></li>
+                <li><a href="" class="nav-item">hello</a></li>
+            </ul>
+            <div class="fk">
+                <p></p>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+
+    <section class="form-sec">
+
+        <form action="">
+
+            <h1>CONTCAT US</h1>
+            <P>Intrested in working let's work together? Let's talk </P>
+
+            <div class="name-div">
+                <div>
+                    <label for="">FIRST NAME.</label><br><br>
+                    <input type="text" name="" id="" placeholder="DEV">
+                </div>
+                <div>
+                    <label for="">LAST NAME.</label><br><br>
+                    <input type="text" placeholder="SAINI">
+                </div>
+            </div>
+
+            <div class="name-div">
+                <div>
+                    <label for="">MOBILE NO.</label><br><br>
+                    <input type="number" name="" id="" placeholder="7027650***">
+                </div>
+                <div>
+                    <label for="">GMAIL.</label><br><br>
+                    <input type="text" placeholder="devsaini14**78@gmail.com">
+                </div>
+
+            </div>
+
+            <div class="name-div  ">
+                <input type="test" class="msg" placeholder="Enter any messes">
+            </div>
+
+            <input type="submit" id="btn-submit">
+
+        </form>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        let a = document.querySelector("#logo-btn");
+        let b = document.querySelector("#logo-btn1");
+
+
+        let c = document.querySelector(".div-phone");
+
+        let header = document.querySelector(".navbar")
+
+
+        function fun1() {
+            b.style.display = "block";
+            a.style.display = "none";
+            c.style.display = "flex";
+            header.style.height = "200px";
+
+        }
+
+        function fun2() {
+            b.style.display = "none";
+            a.style.display = "block"
+            c.style.display = "none"
+            header.style.height = "70px";
+            // header.style.hight = "70px"
+        }
+    </script>
+</body>
+
+</html>
